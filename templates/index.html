@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #2d4c72;
+          font-family: Arial, sans-serif;
+      }
+      .quote-container {
+          text-align: center;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          background: #50c5da;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .quote {
+          font-size: 1.5em;
+          font-style: italic;
+      }
+      .author {
+          margin-top: 10px;
+          font-weight: bold;
+          color: #555;
+          font-size: 15px;
+      }
+  </style>
+</head>
+<body>
+      <div class="quote-container">
+          <div class="quote">{{ quote.q }}</div>
+          <div class="author">{{ quote.a }}</div>
+      </div>
+</body>
+</html>
